@@ -1,0 +1,92 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg,#00f6c5, #bb402d);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 77, 0);
+    font-family: fantasy, 'Arial Black', sans-serif;
+    font-size: 3em;
+    margin-bottom: 1em; /* Reduce or remove large margin */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: fill;
+    background: black;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align to top */
+    min-height: 100vh;
+    margin-top: 10vh; /* Add space from the top */
+    margin-bottom: 0; /* Remove large bottom margin */
+}
+
+input[type="submit"], .btn {
+    background: linear-gradient(-45deg,#ff0b0b, #ffe100);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75em 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(255, 191, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none;
+    margin-top: 1em;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background: linear-gradient(90deg, #ff0000 0%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgb(255, 0, 0);
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.encrypt-bg {
+    background: linear-gradient(135deg, #1e3c72); /* Example: blue gradient */
+}
+
+.encrypt-bg p {
+    color: rgb(0, 255, 26);
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 2em;
+}
