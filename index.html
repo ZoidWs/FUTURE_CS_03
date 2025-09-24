@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Future Interns Cybersecurity Task</title>
+</head>
+<body>
+   <body>
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='4990241-hd_1920_1080_30fps.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="center-container">
+        <h1>File upload</h1>
+        <form method="POST" enctype="multipart/form-data">
+             {{ form.hidden_tag() }}
+            <label class="custom-file-upload">
+                   {{ form.file() }}
+            </label>
+            {{ form.submit() }}
+        </form>
+       
+    </div>
+</body>
